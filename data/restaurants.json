@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Kati Vegan Thai",
+        "address": "1190 Thomas St, Seattle, WA 98109",
+        "Phone number": "(206) 900-7954",
+        "imageCover": "https: //kativeganthai.com/images/gallery/exterior-3m.jpg",
+        "website": "https: //kativeganthai.com/contact/index.html",
+        "openHours": {
+            "Sunday": "11: 30AM – 9PM",
+            "Monday": "11: 30AM – 9PM",
+            "Tuesday": "11: 30AM – 9PM",
+            "Wednesday": "11: 30AM – 9PM",
+            "Thursday": "11: 30AM – 9PM",
+            "Friday": "11: 30AM – 9PM",
+            "Saturday": "11: 30AM – 9PM"
+        },
+        "rating": 4.8,
+        "ratingQuantity": 380,
+        "imgs": [
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/7uK1CL1UlDonJAnxxLd-Xg/348s.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/3FjQg1cw146qOdDz8_Rj1g/348s.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/MOxX9Q2gFetSYo-oOxKL1Q/348s.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/32Rjm0f7KWubh6YW6xiZhQ/348s.jpg"
+        ]
+    },
+    {
+        "name": "Meekong bar",
+        "address": "1190 Thomas St, Seattle, WA 98109",
+        "Phone number": "(206) 257-1030",
+        "imageCover": "https: //s3-media0.fl.yelpcdn.com/bphoto/U13oSc9bhi_hOba-7N0IXA/o.jpg",
+        "website": "https: //meekongbarseattle.com/",
+        "openHours": {
+            "Sunday": "11AM – 8PM",
+            "Monday": "11AM – 8PM",
+            "Tuesday": "11AM – 8PM",
+            "Wednesday": "11AM – 8PM",
+            "Thursday": "11AM – 8PM",
+            "Friday": "11AM – 8PM",
+            "Saturday": "11AM – 8PM"
+        },
+        "rating": 4.5,
+        "ratingQuantity": 533,
+        "imgs": [
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/U13oSc9bhi_hOba-7N0IXA/o.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/SHu5-ud3Hosb1n2RW47nSA/o.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/dMyfB4AqoI_sYlYb21VzrA/o.jpg",
+            "https: //s3-media0.fl.yelpcdn.com/bphoto/slJL0LUN_lwc0nmMG6WDvA/l.jpg"
+        ]
+    }
+]
