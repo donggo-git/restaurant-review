@@ -8,17 +8,17 @@ const restaurantSchema = new mongoose.Schema({
     },
     address: {
         type: String,
-        required: [true, "A restaurant must have a name"],
+        required: [true, "A restaurant must have an address"],
         trim: true
     },
     phoneNumber: {
         type: String,
-        required: [true, "A restaurant must have a name"],
+        required: [true, "A restaurant must have a phone number"],
         trim: true
     },
     imageCover: {
         type: String,
-        required: [true, "A restaurant must have a name"],
+        required: [true, "A restaurant must have a image"],
         trim: true
     },
     website: {
@@ -51,15 +51,15 @@ const restaurantSchema = new mongoose.Schema({
         default: 0
     },
     imgs: [String],
-    reviews: [comment]
+    //reviews: [comment]
 })
 
-const comment = new mongoose.Schema({
+/*const comment = new mongoose.Schema({
     review: {
         type: Map,
         of: String
     }
 })
-
+*/
 const Restaurants = mongoose.model('restaurants', restaurantSchema)
 module.exports = Restaurants

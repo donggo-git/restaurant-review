@@ -2,7 +2,7 @@
     {
         "name": "Kati Vegan Thai",
         "address": "1190 Thomas St, Seattle, WA 98109",
-        "Phone number": "(206) 900-7954",
+        "phoneNumber": "(206) 900-7954",
         "imageCover": "https: //kativeganthai.com/images/gallery/exterior-3m.jpg",
         "website": "https: //kativeganthai.com/contact/index.html",
         "openHours": {
@@ -26,7 +26,7 @@
     {
         "name": "Meekong bar",
         "address": "1190 Thomas St, Seattle, WA 98109",
-        "Phone number": "(206) 257-1030",
+        "phoneNumber": "(206) 257-1030",
         "imageCover": "https: //s3-media0.fl.yelpcdn.com/bphoto/U13oSc9bhi_hOba-7N0IXA/o.jpg",
         "website": "https: //meekongbarseattle.com/",
         "openHours": {
