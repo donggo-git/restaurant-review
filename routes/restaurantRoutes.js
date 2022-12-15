@@ -9,9 +9,9 @@ router
     .get(restaurantsController.getAllRestaurants)
     .post(restaurantsController.addRestaurant)
 
-/*router
+router
     .route('/:id')
     .get(restaurantsController.getRestaurant)
-    .delete(restaurantsController.removeRestaurant)*/
+    .delete(restaurantsController.removeRestaurant)
 
 module.exports = router
