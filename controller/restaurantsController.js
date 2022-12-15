@@ -1,12 +1,17 @@
-const fs = require('fs')
-const data = require('../data/restaurants.json')
+const APIFeatures = require('../ultis/APIFeatures')
 const Restaurants = require('../models/restaurantModels')
 
 
 exports.getAllRestaurants = async (req, res) => {
     try {
-        //filter
-        const restaurants = await Restaurants.find(req.query)
+        //filter, sort
+
+        const features = new APIFeatures(Restaurants.find(), req.query)
+            .filter()
+            .sort()
+        console.log(req.query)
+        const restaurants = await features.query
+        //const restaurants = await Restaurants.find().sort(req.query.sort)
         //execute
         res.status(200).json({
             status: 'success',
