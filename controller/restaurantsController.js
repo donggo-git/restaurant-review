@@ -9,7 +9,8 @@ exports.getAllRestaurants = async (req, res) => {
         const features = new APIFeatures(Restaurants.find(), req.query)
             .filter()
             .sort()
-        console.log(req.query)
+            .pagination()
+        //console.log(req.query)
         const restaurants = await features.query
         //const restaurants = await Restaurants.find().sort(req.query.sort)
         //execute
