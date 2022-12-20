@@ -10,4 +10,10 @@ app.use(express.static(`${__dirname}/public`))
     console.log('app running')
 })*/
 app.use('/api/v1/restaurants', restaurantRoutes)
+app.all('*', function (req, res, next) {
+    res.status(404).json({
+        status: 'fail',
+        message: `Can't find ${req.originalUrl} on this server!`
+    })
+})
 module.exports = app
