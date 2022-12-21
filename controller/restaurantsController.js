@@ -1,5 +1,6 @@
 const APIFeatures = require('../ultis/APIFeatures')
 const Restaurants = require('../models/restaurantModels')
+const updateRating = require('../helper/updateRating')
 
 
 exports.getAllRestaurants = async (req, res) => {
@@ -73,7 +74,20 @@ exports.removeRestaurant = async (req, res) => {
 }
 exports.updateRestaurant = async (req, res) => {
     try {
-        const restaurants = await Restaurants.findByIdAndUpdate(req.params.id, req.body, {
+
+        const reqBody = { ...req.body }
+        //if user want to update rating
+
+        if (req.body.rating) {
+            //look for restaurant needed to update
+            const restaurant = await Restaurants.findById(req.params.id)
+            //calculate the new rating and update rating in the reqBody
+            reqBody.rating = updateRating(req.body.rating, restaurant.rating, restaurant.ratingQuantity)
+            //add 1 for rating quantity
+            reqBody.ratingQuantity = restaurant.ratingQuantity + 1
+        }
+
+        const restaurants = await Restaurants.findByIdAndUpdate(req.params.id, reqBody, {
             new: true,
             runValidators: true
         })

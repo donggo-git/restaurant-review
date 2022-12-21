@@ -13,5 +13,6 @@ router
     .route('/:id')
     .get(restaurantsController.getRestaurant)
     .delete(restaurantsController.removeRestaurant)
+    .patch(restaurantsController.updateRestaurant)
 
 module.exports = router
