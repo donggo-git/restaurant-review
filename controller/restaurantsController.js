@@ -16,6 +16,7 @@ exports.getAllRestaurants = catchAsync(async (req, res, next) => {
     //execute
     res.status(200).json({
         status: 'success',
+        size: restaurants.length,
         data: { restaurants }
     })
 
@@ -58,7 +59,7 @@ exports.updateRestaurant = catchAsync(async (req, res, next) => {
 
     const reqBody = { ...req.body }
     //if user want to update rating
-    if (req.body.rating) {
+    /*if (req.body.rating) {
         //look for restaurant needed to update
         const restaurant = await Restaurants.findById(req.params.id)
 
@@ -68,7 +69,7 @@ exports.updateRestaurant = catchAsync(async (req, res, next) => {
         reqBody.rating = updateRating(req.body.rating, restaurant.rating, restaurant.ratingQuantity)
         //add 1 for rating quantity
         reqBody.ratingQuantity = restaurant.ratingQuantity + 1
-    }
+    }*/
 
     const restaurants = await Restaurants.findByIdAndUpdate(req.params.id, reqBody, {
         new: true,
